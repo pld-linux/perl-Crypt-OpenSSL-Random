@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	OpenSSL-Random
+%define		pdir	Crypt
+%define		pnam	OpenSSL-Random
 Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
 Summary(pl):	Crypt::OpenSSL::Random - dostêp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
