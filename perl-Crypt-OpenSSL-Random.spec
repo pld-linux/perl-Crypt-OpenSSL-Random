@@ -85,7 +85,7 @@ Crypt::OpenSSL::Random Perl Ä£¿é
 
 %build
 perl Makefile.PL
-%{__make}
+%{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
