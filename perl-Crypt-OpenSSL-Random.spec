@@ -9,13 +9,13 @@ Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number gen
 Summary(pl):	Crypt::OpenSSL::Random - dostêp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.03
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,7 +30,8 @@ generatora liczb pseudolosowych z biblioteki OpenSSL.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -46,9 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_sitearch}/Crypt/OpenSSL/Random.pm
-%dir %{perl_sitearch}/auto/Crypt/OpenSSL/Random
-%{perl_sitearch}/auto/Crypt/OpenSSL/Random/*.bs
-%{perl_sitearch}/auto/Crypt/OpenSSL/Random/autosplit.ix
-%attr(755,root,root) %{perl_sitearch}/auto/Crypt/OpenSSL/Random/*.so
+%{perl_vendorarch}/Crypt/OpenSSL/Random.pm
+%dir %{perl_vendorarch}/auto/Crypt/OpenSSL/Random
+%{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.bs
+%{perl_vendorarch}/auto/Crypt/OpenSSL/Random/autosplit.ix
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.so
 %{_mandir}/man3/*
