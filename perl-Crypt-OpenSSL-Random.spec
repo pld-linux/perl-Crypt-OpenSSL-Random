@@ -10,7 +10,7 @@ Summary(pl):	Crypt::OpenSSL::Random - dostêp do generatora liczb pseudolosowych 
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.03
 Release:	4
-License:	GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c6bae9c3ced1e08ffcd57120bf247a7a
