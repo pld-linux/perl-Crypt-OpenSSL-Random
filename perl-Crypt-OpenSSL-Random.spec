@@ -1,10 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	OpenSSL-Random
-Summary:	Crypt::OpenSSL::RSA - RSA encoding and decoding
+Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
+Summary(pl):	Crypt::OpenSSL::Random - dostêp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -14,8 +19,12 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt::OpenSSL::Random provides the ability to seed and query the OpenSSL
-library's pseudo-random number generator.
+Crypt::OpenSSL::Random provides the ability to seed and query the
+OpenSSL library's pseudo-random number generator.
+
+%description -l pl
+Modu³ Crypt::OpenSSL::Random daje mo¿liwo¶æ zasilania oraz odpytywanie
+generatora liczb pseudolosowych z biblioteki OpenSSL.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -23,6 +32,8 @@ library's pseudo-random number generator.
 %build
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
