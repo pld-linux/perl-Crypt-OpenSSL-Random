@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	OpenSSL-Random
 Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
-Summary(pl):	Crypt::OpenSSL::Random - dostêp do generatora liczb pseudolosowych z OpenSSL
+Summary(pl.UTF-8):   Crypt::OpenSSL::Random - dostÄ™p do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.03
 Release:	5
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Crypt::OpenSSL::Random provides the ability to seed and query the
 OpenSSL library's pseudo-random number generator.
 
-%description -l pl
-Modu³ Crypt::OpenSSL::Random daje mo¿liwo¶æ zasilania oraz odpytywanie
+%description -l pl.UTF-8
+ModuÅ‚ Crypt::OpenSSL::Random daje moÅ¼liwoÅ›Ä‡ zasilania oraz odpytywanie
 generatora liczb pseudolosowych z biblioteki OpenSSL.
 
 %prep
