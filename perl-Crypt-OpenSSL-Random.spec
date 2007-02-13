@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	OpenSSL-Random
 Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
-Summary(pl.UTF-8):   Crypt::OpenSSL::Random - dostęp do generatora liczb pseudolosowych z OpenSSL
+Summary(pl.UTF-8):	Crypt::OpenSSL::Random - dostęp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.03
 Release:	5
