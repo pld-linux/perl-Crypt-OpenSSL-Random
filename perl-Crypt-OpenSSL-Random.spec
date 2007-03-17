@@ -12,8 +12,9 @@ Version:	0.03
 Release:	5
 License:	unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c6bae9c3ced1e08ffcd57120bf247a7a
+URL:		http://search.cpan.org/dist/Crypt-OpenSSL-Random/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
