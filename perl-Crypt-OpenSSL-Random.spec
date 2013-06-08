@@ -9,7 +9,7 @@ Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number gen
 Summary(pl.UTF-8):	Crypt::OpenSSL::Random - dostęp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
 Version:	0.04
-Release:	6
+Release:	7
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
