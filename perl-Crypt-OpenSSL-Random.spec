@@ -55,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorarch}/Crypt/OpenSSL/Random.pm
 %dir %{perl_vendorarch}/auto/Crypt/OpenSSL/Random
-%{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.bs
 %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.so
 %{_mandir}/man3/*
