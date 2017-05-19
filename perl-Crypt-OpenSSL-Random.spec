@@ -8,13 +8,13 @@
 Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
 Summary(pl.UTF-8):	Crypt::OpenSSL::Random - dostęp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
-Version:	0.04
-Release:	12
+Version:	0.11
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c56ac5dbdd46122eb9b8da59613b7b0a
+# Source0-md5:	5d71337503e0356ce1ce1481504e5885
 URL:		http://search.cpan.org/dist/Crypt-OpenSSL-Random/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -55,6 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorarch}/Crypt/OpenSSL/Random.pm
 %dir %{perl_vendorarch}/auto/Crypt/OpenSSL/Random
-%{perl_vendorarch}/auto/Crypt/OpenSSL/Random/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.so
 %{_mandir}/man3/*
