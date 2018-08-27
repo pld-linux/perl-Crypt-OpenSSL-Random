@@ -18,6 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.
 URL:		http://search.cpan.org/dist/Crypt-OpenSSL-Random/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-Crypt-OpenSSL-Guess
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
