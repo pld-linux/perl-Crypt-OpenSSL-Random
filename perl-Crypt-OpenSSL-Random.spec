@@ -14,11 +14,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bcde8d5a822c91376deda3c4f0c75fbe
-URL:		http://search.cpan.org/dist/Crypt-OpenSSL-Random/
+URL:		https://metacpan.org/dist/Crypt-OpenSSL-Random
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-Crypt-OpenSSL-Guess
+BuildRequires:	perl-Crypt-OpenSSL-Guess >= 0.11
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorarch}/Crypt/OpenSSL/Random.pm
 %dir %{perl_vendorarch}/auto/Crypt/OpenSSL/Random
-%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/*.so
-%{_mandir}/man3/*
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/Random/Random.so
+%{_mandir}/man3/Crypt::OpenSSL::Random.3pm*
