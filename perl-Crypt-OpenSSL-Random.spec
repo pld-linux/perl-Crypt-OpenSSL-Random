@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_without	tests	# Do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Crypt
 %define		pnam	OpenSSL-Random
 Summary:	Crypt::OpenSSL::Random - accessing the OpenSSL pseudo-random number generator
 Summary(pl.UTF-8):	Crypt::OpenSSL::Random - dostęp do generatora liczb pseudolosowych z OpenSSL
 Name:		perl-Crypt-OpenSSL-Random
-Version:	0.15
-Release:	10
+Version:	0.17
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bcde8d5a822c91376deda3c4f0c75fbe
+Source0:	https://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	294f545c54a5a4855cb00c5648eb5c2b
 URL:		https://metacpan.org/dist/Crypt-OpenSSL-Random
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
